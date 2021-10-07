@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="br", dir='ltr'>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Cadastro de Pessoas Exercício</title>
+        <link rel="stylesheet" href="exercicio_aula07_formularios.css">
+
+
+    </head>
+
+    <body> 
+        
+        <h1>Dados do cadastro da pessoa</h1>
+
+        <div >
+
+            <form  method="get" action="validar.html">
+
+                <div>
+                    <label for="campo_nome"> Nome: </label>
+                    <input type="text" name="nome" id="campo_nome" placeholder="Digite seu nome..." >
+                </div>
+               
+                <div>
+                    <label for="campo_endereco"> Endereço: </label> 
+                    <input type="text" name="endereço" id="campo_enereco"> 
+                </div>
+    
+                <div>
+
+                    <label>Gênero:</label>
+    
+                    <div>
+                        <input type="radio" name="genero" id="campo_feminino" value='F'>
+                        <label for="feminino"> Feminino </label>
+                        <span class="checkmark"></span>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="genero" id="campo_masculino" value='M'>
+                        <label for="masculino"> Masculino </label>
+                        <span class="checkmark"></span>
+                    </div>
+    
+                    <div>
+                        <input type="radio" name="genero" id="campo_nbinario" value='NB'>
+                        <label for="não binário"> Não Binário </label>
+                        <span class="checkmark"></span>
+                    </div>
+    
+                    <div>
+                        <input type="radio" name="genero" id="campo_sem_resposta" value='SR'>
+                        <label for="sem resposta"> Sem resposta </label> 
+                        <span class="checkmark"></span>
+                    </div>
+    
+                    <div>
+                        
+                        <label>Áreas de Interesse:</label>
+                        
+     
+                        <label class="container" for='web' >Sistemas Web
+                            <input type="checkbox"   name="area[1]" id="web">
+                            <span class="checkmark"></span>
+                        </label>
+                        
+                        <label class="container" for='web' >Redes de Computadores
+                            <input type="checkbox" name="area[2]" id="redes">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="container" for='ia' >Inteligência Artificial
+                            <input type="checkbox" name="area[3]" id="ia">
+                            <span class="checkmark"></span>
+                        </label>
+                  
+                      
+                    </div>
+    
+                </div>
+                
+
+                <button class="button" type="submit" value="voltar">Voltar</button>
+                <button class="button" type="submit" value="cadastrar">Cadastrar</button>
+                
+    
+            </form>
+
+    
+        </div>
+
+
+    </body>
+</html>

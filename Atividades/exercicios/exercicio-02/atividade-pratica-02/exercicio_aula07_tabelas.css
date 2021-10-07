@@ -1,0 +1,28 @@
+tr > th {
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+
+}
+
+caption {  
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+tr, th{
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    text-align: left;
+}
+
+tr:nth-child(even) {background-color: #05d588;}
