@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Introducao ao Boootstrap</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link href=https://material.io/design/color/dark-theme.html#anatomy >
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+              integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        
+        <h1>Dados do cadastro da pessoa</h1>
+
+        <form method="get" action="validar.html">
+            
+            <div class="form-group">
+                <label for="campo_nome"> Nome: </label>
+                <input class="form-control" type="text" name="nome" id="campo_nome" placeholder="digite seu nome .." >
+            </div>
+           
+            <div class="form-group">
+                <label for="campo_endereco"> Endereço: </label> 
+                <input class="form-control" type="text" name="endereço" id="campo_enereco" placeholder="digite seu endereco .."> 
+            </div>
+
+            <div>
+                <label>Gênero:</label>
+
+                <div class='form-group from-check'>
+                    <input type="radio" name="genero" id="campo_feminino" value='F' class="from-check-input">
+                    <label for="feminino" class="from-check-label"> Feminino </label> 
+                </div>
+                
+                <div class='form-group from-check'>
+                    <input type="radio" name="genero" id="campo_masculino" value='M' class="from-check-input">
+                    <label for="masculino" class="from-check-label"> Masculino </label> 
+                </div>
+
+                <div class='form-group from-check'>
+                    <input type="radio" name="genero" id="campo_nbinario" value='NB' class="from-check-input">
+                    <label for="não binário" class="from-check-label"> Não Binário </label> 
+                </div>
+
+                <div class='form-group from-check'>
+                    <input type="radio" name="genero" id="campo_sem_resposta" value='SR' class="from-check-input">
+                    <label for="sem resposta" class="from-check-label"> Sem resposta </label> 
+                </div>
+
+                <div>
+                    
+                    <label>Áreas de Interesse:</label>
+
+                    <div class="form-group from-check">
+                        <input type='checkbox' name="area[1]" id="web" class="from-check-input" >
+                        <label for='web'  class="from-check-label" >Sistemas Web</label>    
+                    </div>
+
+                    <div class="form-group from-check">
+                        <input type='checkbox' name="area[2]" id="redes" class="from-check-input" >
+                        <label for='redes'  class="from-check-label" >Redes</label>
+                    </div>
+
+                    <div class="form-group from-check">
+                        <input type='checkbox' name="area[3]" id="ia" class="from-check-input" >
+                        <label for='ia'  class="from-check-label" >Inteligência Artificial</label> 
+                    </div>
+
+                </div>
+
+            </div>
+                
+            <input type="submit" value="cadastrar" class="btn btn-primary" >
+            <input type="reset" value='limpar' class='btn btn-danger'>
+
+        </form>
+
+        <a href="08_introducao.html">Voltar</a>
+
+    </body>
+</html>

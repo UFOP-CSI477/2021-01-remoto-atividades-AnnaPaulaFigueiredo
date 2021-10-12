@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt</title>
+
+    <script>
+        
+        'use strict'
+
+        function Pessoa( nome, sobrenome, idade, rua, numero, bairro, cidade ){
+
+            this.nome = nome;
+            this.sobrenome = sobrenome;
+            this.idade = idade;
+            this.rua = rua;
+            this.numero = numero;
+            this.bairro = bairro;
+            this.cidade = cidade;
+           
+        }
+
+        function carregarDados(){
+            
+            var nome = window.prompt("Insira seu nome:");
+            var sobrenome = window.prompt("Insira seu sobrenome");
+            var idade = window.prompt("Idade:");
+            var rua = window.prompt("Rua:");
+            var numero = window.prompt("Número");
+            var bairro = window.prompt("Bairro");
+            var cidade = window.prompt("Cidade:");
+
+            const pessoa = new Pessoa( nome, sobrenome, idade, rua, numero, bairro, cidade );
+ 
+            document.getElementById("nome").innerHTML = pessoa.nome+" "+pessoa.sobrenome;
+            document.getElementById("idade").innerHTML = pessoa.idade;
+            document.getElementById("rua").innerHTML = pessoa.rua;
+            document.getElementById("numero").innerHTML = pessoa.numero;
+            document.getElementById("bairro").innerHTML = pessoa.bairro;
+            document.getElementById("cidade").innerHTML = pessoa.cidade;
+        }
+
+    </script>
+</head>
+
+    <body>
+
+        <script>
+            document.write('Olá, vou pedir você algumas informações para continuarmos, vamos lá !?')
+        </script>
+
+    <div id='dados'>
+
+        <div id="nome"></div>
+        <div id="sobrenome"></div>
+        <div id="idade"></div>
+        <div id="rua"></div>
+        <div id="numero"></div>
+        <div id="bairro"></div>
+        <div id="cidade"></div>
+
+    </div>      
+
+    <div>
+        <input type="button" value="click para começar" onclick="carregarDados()">
+    </div>
+   
+
+
+
+
+    </body>
+
+
+
+
+
+</html>
