@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href=https://material.io/design/color/dark-theme.html#anatomy >
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <title>Validando o formulário</title>  
+
+    <script src='04-validacao-form.js'></script>
+
+
+</head>
+<body>
+
+    <div class="jumbotron">
+        <h1>Vamos conhecer um pouquinho de você? <br>
+            Preencha o formulário</h1>
+        <p>Validação e apresentação em Bootstrap</p>
+    </div>
+
+    <div class="container-fluid">
+        <form name="frmDados">
+            
+            <div class='row'>
+              
+                <div class='col'>
+                    <label for="idade">Nome:</label>
+                    <input type="txt" class="form-control" id="nome" placeholder="insira seu nome ...">
+
+                </div>
+
+                <div class="col">
+                    <label for="idade">Sobrenome</label>
+                    <input type="txt" class="form-control" id="sobrenome" placeholder="insira seu sobre nome ...">
+                </div>
+
+            </div>
+
+            <div class='row'>
+
+                <div class="form-group col-md-6">
+                    
+                    <label for="curso">Selecione seu curso</label>
+                    <select id="curso" class="form-control">                       
+                        <option selected name='EC'>Eng. da Computação</option>
+                        <option selected name='EE'>Eng. Elétrica</option>
+                        <option selected name='EP'>Eng. Produção</option>
+                        <option selected name='SI'>Sistemas de Informação</option>
+                        <option selected name='df'>default</option>
+                    </select>
+                
+                </div>
+
+                <div class="form-group col-md-2">
+
+                    <label for="idade">Idade</label>
+                    <input type="number" class="form-control" id="idade" placeholder="digite sua idade ...">
+
+                </div>
+
+                <div class='col'>
+
+                    <label>Celular</label>
+                    <input type="text" class="form-control" placeholder="celular" id="digite seu celular..." name="celular" ><br>
+                </div>
+
+            </div>
+        
+        </div>
+
+        <div class='col-auto'>
+            <button type="submit" class="btn btn-primary" onclick="carregar_dados_do_form()">submit</button>
+        </div>
+        
+    
+    </form>
+   
+
+</body>
+</html>
