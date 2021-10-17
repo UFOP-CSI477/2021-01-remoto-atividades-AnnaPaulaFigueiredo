@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src='05-carregamento-api.js'></script>
+    <title>Nomes IBGE</title>
+
+</head>
+
+<body onload="carregarNames()">
+
+    <div class="jumbotron">
+        
+        <div class="alert alert-primary" role="alert">
+            <h1 class='display-3'>Vamos descobrir o ranking de alguns nomes mais comuns no Brasil ?</h1>
+        </div>
+
+       
+    </div>
+    
+   <div class='container-fluid'>
+
+        <div class="form-group row">
+            <form class='col-md-10'>
+
+                <select name='select_names' id="select_names"  onchange="mostrarRanking()" >
+                    <option value="" >Selecione o nome</option>
+                </select>
+
+                <button type="button" class="btn btn-info form-group-col-md-2" onclick="carregarRanking()">Carregar Ranking</button>
+
+            </form>
+        </div>
+    
+        
+
+        <br>
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+            <h5 class="card-title">Ranking</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Aqui você verá em qual posição o nome escolhido se encontra.</h6>
+            <p class="card-text", id="result-ranking">Posição: </p>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
