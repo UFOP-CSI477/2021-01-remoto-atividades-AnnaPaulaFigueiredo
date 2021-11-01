@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pix</title>
+
+    <link rel="stylesheet" href="02-pix.css">
+
+ 
+    <script src='02-pix.js'></script>
+
+
+</head>
+<body onload="carregarBancos()">
+
+    <div class="box">
+        
+        <form action="">
+            <fieldset>
+
+                <legend> "Envie seu pix"</legend>
+
+                <div>
+                    <b for='resultado'><b>Seu saldo é de:</b></label>
+                    <input type="text" name='saldo' id='saldo' value="1000.00" disabled='disabled'>
+                </div>
+               
+                <div class="divSelect" id="idSelect" >
+                    <p><b>Selecione a chave do destinatário: </b></p>
+                    <input type="radio" id="destinatario" name ="destinatario" value="CPF" required > 
+                    <label for="CPF">CPF</label>
+                    <br>
+                    <input type="radio" id="destinatario" name="destinatario" value="CNPJ" required>
+                    <label for="CNPJ">CNPJ</label>
+                    <br>
+                    <input type="radio" id="destinatario" name="destinatario" value="e-mail" required>
+                    <label for="e-mail">e-mail</label>
+                    <br>
+                    <input type="radio" id="destinatario" name="destinatario" value="celular" required>
+                    <label for="celular">celular</label>
+                    <br>
+                    <input type="radio" id="destinatario" name="destinatario" value="chaveAleatoria" required>
+                    <label for="chaveAleatoria">chave aleatória</label>
+                    <br>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <label for="dataTransacao"><b>Data da Transação:</b></label>
+                    <input type="date" name="dataTransacao" id="dataTransacao" class="dataTransacao" class="dataTransacao" required>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <label for="tipoTransacao"><b>Tipo da Transação:</b></label>
+                    <select class="form-control form-control-lg" required id='idTipoTransacao'>
+                        <option value="envio">Envio</option>
+                        <option value="recebimento">Recebimento</option>
+                    </select>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <label for="valorTransacao"><b>Valor da Transacao:</b></label>
+                    <input type="text" name="valorTransacao" id="valorTransacao" class="valorTransacao" class="valorTransacao" required placeholder="000,00">         
+                </div>
+                <br>
+                <div class="inputBox">
+                    <label for="chavePix"><b>Entre com a CHAVE PIX:</b></label>
+                    <input type="text" name="chavePix" id="CHAVEPIX" class="chavePix" required >         
+                </div>
+                <br>
+                <div class="divSelect">
+                    <label for="bancoDestinatario" required><b>Selecione o banco do destinatário:</b></label>
+                    <br>
+                    <select class="form-control form-control-lg"  name='bancos' id="bancos">
+                        <option value="">Selecione</option>
+                    </select>
+                </div>
+                <br>
+                <input type="submit" name="submit" id="submit" onclick="validateChavePix()"> 
+            
+            </fieldset>
+            <a href=https://www.youtube.com/watch?v=VCsNIRXNsmY>Link referência</a>
+        </form>
+        
+
+    </div>
+
+   
+</body>
+
+
+
+</html>
