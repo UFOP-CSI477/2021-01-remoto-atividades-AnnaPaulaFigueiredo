@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 use App\Models\Produto;
 use App\Http\Controllers\ProdutoController;
+use App\Http\Controllers\PessoaController;
+use App\Http\Controllers\CompraController;
 
 Route::get('/', function () {
     return view('principal');
@@ -22,25 +24,7 @@ Route::get('/', function () {
 
 Route::resource('/produtos', ProdutoController::class);
 
+Route::resource('/pessoas', PessoaController::class);
 
-/*
-Route::get('/products_all', function() {
-    
-    $produtos =  Produto::all();
-
-    return view('lista_de_produtos', ['dados'=> $produtos]);
-
-});
-
-Route::get('/id/{id}', function($id){
-
-    $produto = Produto::find($id);
-
-    if ($produto == null){
-      return "Id inválido";
-    }
-
-    return   view('lista_de_produtos', ['dados'=> $produto]);
-});
-*/
+Route::resource('/compras', CompraController::class);
 

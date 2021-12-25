@@ -13,6 +13,7 @@
     <style type='text/css'> 
         .logo{
 
+            
             font-family:'Secular One', sans-serif;
 
         } 
@@ -33,8 +34,8 @@
     <ul class="nav">
         <li class="nav-item"><a class="nav-link" href="{{route('principal')}}">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="{{route('produtos.index')}}">Produtos</a></li>
-        <li class="nav-item"><a class="nav-link" href="/">Quantidade</a></li>
-        <li class="nav-item"><a class="nav-link" href="/">Tipo</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{route('pessoas.index')}}">Pessoas</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{route('compras.index')}}">Compras</a></li>
     </ul>
 
     </nav>
@@ -48,7 +49,7 @@
     @yield('conteudo')
 
 
-
+  
 
     </div>
 </body>

@@ -17,7 +17,7 @@ class ProdutoController extends Controller
         $produtos = Produto::orderBy('nome')->get();
 
         return view('produtos.index', ['produtos'=> $produtos]);
-    }
+    } 
     /**
      * Show the form for creating a new resource.
      *
@@ -31,8 +31,8 @@ class ProdutoController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     *@param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response 
      */
     public function store(Request $request)
     {
@@ -93,7 +93,7 @@ class ProdutoController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\Produto  $produto
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Response 
      */
     public function destroy(Produto $produto)
     {  
