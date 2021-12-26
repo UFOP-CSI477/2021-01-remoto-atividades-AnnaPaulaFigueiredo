@@ -22,9 +22,14 @@ Route::get('/', function () {
 })->name('principal');
 
 
-Route::resource('/produtos', ProdutoController::class);
+Route::resource('/produtos', ProdutoController::class)->middleware('auth');
 
-Route::resource('/pessoas', PessoaController::class);
+Route::resource('/pessoas', PessoaController::class)->middleware('auth');
 
-Route::resource('/compras', CompraController::class);
+Route::resource('/compras', CompraController::class)->middleware('auth');
 
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
