@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Request;
-use App\Http\Requests\StoreRequestRequest;
-use App\Http\Requests\UpdateRequestRequest;
+use App\Models\Solicitation;
+use App\Http\Requests\StoreSolicitationRequest;
+use App\Http\Requests\UpdateSolicitationRequest;
 
-class RequestController extends Controller
+class SolicitationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class RequestController extends Controller
      */
     public function index()
     {
-        //
+        return view('solicitations.index');
     }
 
     /**
@@ -31,10 +31,10 @@ class RequestController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreRequestRequest  $request
+     * @param  \App\Http\Requests\StoreSolicitationRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreRequestRequest $request)
+    public function store(StoreSolicitationRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class RequestController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Request  $request
+     * @param  \App\Models\Solicitation  $solicitation
      * @return \Illuminate\Http\Response
      */
-    public function show(Request $request)
+    public function show(Solicitation $solicitation)
     {
         //
     }
@@ -53,10 +53,10 @@ class RequestController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Request  $request
+     * @param  \App\Models\Solicitation  $solicitation
      * @return \Illuminate\Http\Response
      */
-    public function edit(Request $request)
+    public function edit(Solicitation $solicitation)
     {
         //
     }
@@ -64,11 +64,11 @@ class RequestController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateRequestRequest  $request
-     * @param  \App\Models\Request  $request
+     * @param  \App\Http\Requests\UpdateSolicitationRequest  $request
+     * @param  \App\Models\Solicitation  $solicitation
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateRequestRequest $request, Request $request)
+    public function update(UpdateSolicitationRequest $request, Solicitation $solicitation)
     {
         //
     }
@@ -76,10 +76,10 @@ class RequestController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Request  $request
+     * @param  \App\Models\Solicitation  $solicitation
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Request $request)
+    public function destroy(Solicitation $solicitation)
     {
         //
     }

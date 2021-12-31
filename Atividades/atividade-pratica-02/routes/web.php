@@ -2,7 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\SubjectController;
+use App\Models\Protocol;
+use App\Models\Solicitation;
+
+use App\Http\Controllers\ProtocolController;
+use App\Http\Controllers\SolicitationController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,12 +19,21 @@ use App\Http\Controllers\SubjectController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/administrative', function () {
+    return view('viewAdministrative');
+})->name('viewAdministrative');
 
 Route::get('/', function () {
     return view('viewBase');
 })->name('viewBase');
 
-Route::resource('/subjects', SubjectController::class);
+Route::resource('/solicitations', SolicitationController::class);
+
+Route::resource('/protocols', ProtocolController::class);
+
+Route::get('/viewEdit', function () {
+    return view('protocols.list');
+})->name('viewEdit');
 
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 

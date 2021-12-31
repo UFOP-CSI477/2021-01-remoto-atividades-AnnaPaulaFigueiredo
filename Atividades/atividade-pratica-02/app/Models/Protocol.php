@@ -5,10 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Request extends Model
+class Protocol extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['user_id', 'subject_id', 'person', 'description', 'date'];
-    
+    protected $fillable = ['name', 'price'];
 }
