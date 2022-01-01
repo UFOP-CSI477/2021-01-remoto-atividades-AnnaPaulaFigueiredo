@@ -18,13 +18,13 @@
         </div>
 
         <div class="col-sm">
-            <a class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" href="{{route('viewEdit')}}" >
+            <a class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" href="{{route('viewListToEdit')}}">
             Edit a Protocol
             </a>
         </div>
 
         <div class="col-sm">
-            <a class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+            <a class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Tooltip on top" href="{{route('viewListToDestroy')}}" >
             Delete a Protocol
             </a>
         </div>

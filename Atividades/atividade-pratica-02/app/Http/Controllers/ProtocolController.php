@@ -8,23 +8,39 @@ use App\Http\Requests\UpdateProtocolRequest;
 
 class ProtocolController extends Controller
 {   
-    
+    private $id;
+    private $name;
+    private $price;
+
+    public function __construct(){
+
+        $this -> objProtocol=new Protocol();
+
+
+    }
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
-    {
-        return view('protocols.index');
-    }
-
-    public function viewEdit()
     {   
-       // $protocols = Protocol::orderBy('id')->get();
+         return view('protocols.index');
+    }
+    
 
-        // view('protocols.list', ['protocols'=> $protocols]);
-        return view('protocols.index');
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+
+    public function viewList()
+    {   
+        //$protocol = $this->objProtocol->all();
+        
+        return "Olá mundo";//view('protocols.viewList', ['protocol'=>$protocol]);
 
     }
     /**

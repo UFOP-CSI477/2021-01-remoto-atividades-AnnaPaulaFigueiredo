@@ -23,17 +23,30 @@ Route::get('/administrative', function () {
     return view('viewAdministrative');
 })->name('viewAdministrative');
 
+
 Route::get('/', function () {
     return view('viewBase');
 })->name('viewBase');
+
+Route::get('/viewListToEdit', function () {
+
+    $protocol = Protocol::get();
+    return View::make('protocols.viewListToEdit', compact('protocol'));
+
+})->name('viewListToEdit');
+
+Route::get('/viewListToDestroy', function () {
+
+    $protocol = Protocol::get();
+    return View::make('protocols.viewListToDestroy', compact('protocol'));
+    
+})->name('viewListToDestroy');
 
 Route::resource('/solicitations', SolicitationController::class);
 
 Route::resource('/protocols', ProtocolController::class);
 
-Route::get('/viewEdit', function () {
-    return view('protocols.list');
-})->name('viewEdit');
+
 
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 

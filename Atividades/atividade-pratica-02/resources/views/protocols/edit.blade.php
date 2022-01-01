@@ -8,8 +8,8 @@
         @method('PUT')
 
         <div class="form=group">
-            <label for="nome">Nome</label>
-            <input type="text" class="form-control" name="nome" id="nome", value="{{$protocol->nome}}">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" name="name" id="name", value="{{$protocol->name}}">
         </div>
 
         <div class="form=group">
