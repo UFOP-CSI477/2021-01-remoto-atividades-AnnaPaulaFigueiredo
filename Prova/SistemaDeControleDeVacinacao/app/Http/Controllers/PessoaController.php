@@ -14,8 +14,10 @@ class PessoaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        //
+    {   
+        $pessoas = Pessoa::orderBy('nome')->get();
+        
+        return view('pessoas.index', ['pessoas'=> $pessoas]);
     }
 
     /**

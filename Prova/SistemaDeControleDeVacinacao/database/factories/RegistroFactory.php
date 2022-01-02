@@ -18,7 +18,8 @@ class RegistroFactory extends Factory
             'pessoa_id'=>$this->faker->randomElement([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),
             'unidade_id'=>$this->faker->randomElement([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),
             'vacina_id'=>$this->faker->randomElement([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),
-            'data'=>$this->faker->date('Y_m_d'),
+            'dose'=>$this->faker->numberBetween(1, 3),
+            'data_registro'=>$this->faker->date('Y_m_d'),
         ];
     }
 }

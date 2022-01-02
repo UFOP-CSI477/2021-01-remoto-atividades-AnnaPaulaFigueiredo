@@ -15,7 +15,9 @@ class RegistroController extends Controller
      */
     public function index()
     {
-        //
+        $registros = Registro::orderBy('id')->get();
+        
+        return view('registros.index', ['registros'=> $registros]);
     }
 
     /**

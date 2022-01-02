@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Registro extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['id', 'pessoa_id', 'unidade_id', 'vacina_id', 'dose','data_registro'];
+
 }

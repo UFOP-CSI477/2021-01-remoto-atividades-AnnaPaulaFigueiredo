@@ -21,7 +21,8 @@ class CreateRegistrosTable extends Migration
             $table->unsignedBigInteger("pessoa_id");
             $table->unsignedBigInteger("unidade_id");
             $table->unsignedBigInteger("vacina_id");
-            $table->date('data');
+            $table->integer('dose');            
+            $table->date("data_registro");
             
             $table->foreign("pessoa_id")
                 ->references('id')

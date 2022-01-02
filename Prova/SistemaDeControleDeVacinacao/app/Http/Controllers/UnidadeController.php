@@ -15,7 +15,9 @@ class UnidadeController extends Controller
      */
     public function index()
     {
-        //
+        $unidades = Unidade::orderBy('nome')->get();
+        
+        return view('unidades.index', ['unidades'=> $unidades]);
     }
 
     /**
