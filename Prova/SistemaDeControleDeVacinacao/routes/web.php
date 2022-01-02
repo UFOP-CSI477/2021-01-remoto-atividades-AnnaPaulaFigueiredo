@@ -11,6 +11,7 @@ use App\Http\Controllers\PessoaController;
 use App\Http\Controllers\UnidadeController;
 use App\Http\Controllers\VacinaController;
 use App\Http\Controllers\RegistroController;
+use App\Http\Controllers\ConsultaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,14 @@ Route::get('/', function () {
     return view('principal');
 })->name('principal');
 
+//Route::get('/areaGeral', function () {
+//    return view('areaGeral');
+//})->name('areaGeral');
+
+Route::get('/areaAdministrativa', function () {
+    return view('/areaAdministrativa');
+})->name('areaAdministrativa');
+
 Route::resource('/pessoas', PessoaController::class);
 
 Route::resource('/unidades', UnidadeController::class);
@@ -35,6 +44,10 @@ Route::resource('/vacinas', VacinaController::class);
 
 Route::resource('/registros', RegistroController::class);
 
+Route::resource('/areaGeral', ConsultaController::class);
+
 Auth::routes();
+
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -21,6 +21,17 @@ class PessoaController extends Controller
     }
 
     /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function home()
+    {   
+               
+        return "teste";
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
@@ -49,7 +60,7 @@ class PessoaController extends Controller
      */
     public function show(Pessoa $pessoa)
     {
-        //
+       
     }
 
     /**

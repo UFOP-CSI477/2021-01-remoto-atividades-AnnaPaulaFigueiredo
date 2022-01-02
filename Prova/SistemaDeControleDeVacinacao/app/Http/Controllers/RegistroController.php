@@ -48,8 +48,9 @@ class RegistroController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Registro $registro)
-    {
-        //
+    {   
+
+        return dd($registro);
     }
 
     /**

@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Registro;
 
 class Pessoa extends Model
 {
@@ -11,4 +12,9 @@ class Pessoa extends Model
 
     protected $fillable = ['nome', 'bairro', 'cidade', 'estado', 'data_nascimento', 'cpf'];
 
+    public function registros(){
+
+        return $this->hasMany(Registro::Class);
+
+    }
 }
