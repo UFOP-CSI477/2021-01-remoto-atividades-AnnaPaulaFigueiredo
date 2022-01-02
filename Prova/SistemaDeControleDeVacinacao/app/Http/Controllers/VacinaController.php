@@ -60,7 +60,7 @@ class VacinaController extends Controller
      */
     public function edit(Vacina $vacina)
     {
-        //
+        view('vacinas.edit');
     }
 
     /**

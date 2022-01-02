@@ -47,10 +47,23 @@
                 @endif
                 @else
                     <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                            {{ Auth::user()->name }}
-                        </a>
+                        
+                                            
 
+                        
+                        <div class="nav-item dropdown ">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            {{ Auth::user()->name }}
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                            <a class="dropdown-item" href="{{ route('logout') }}"
+                                                        onclick="event.preventDefault();
+                                                        document.getElementById('logout-form').submit();">
+                                                            {{ __('Logout') }}
+                                                </a>
+                        
+                            </div>
+ 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
@@ -62,7 +75,8 @@
                             @csrf
                         </form>
                         </div>
-                        </li>
+       
+                    </li>
         @endguest
         </ul>
     </div>

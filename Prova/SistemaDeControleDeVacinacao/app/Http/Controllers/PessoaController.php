@@ -38,7 +38,7 @@ class PessoaController extends Controller
      */
     public function create()
     {
-        //
+        return view('pessoas.create');
     }
 
     /**

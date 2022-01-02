@@ -36,6 +36,18 @@ Route::get('/areaAdministrativa', function () {
     return view('/areaAdministrativa');
 })->name('areaAdministrativa');
 
+Route::get('/menuPessoas', function () {
+    return view('menuPessoas');
+})->name('menuPessoas');
+
+Route::get('/menuVacinas', function () {
+    return view('menuVacinas');
+})->name('menuVacinas');
+
+Route::get('/menuUnidades', function () {
+    return view('menuUnidades');
+})->name('menuUnidades');
+
 Route::resource('/pessoas', PessoaController::class);
 
 Route::resource('/unidades', UnidadeController::class);
@@ -47,7 +59,6 @@ Route::resource('/registros', RegistroController::class);
 Route::resource('/areaGeral', ConsultaController::class);
 
 Auth::routes();
-
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
