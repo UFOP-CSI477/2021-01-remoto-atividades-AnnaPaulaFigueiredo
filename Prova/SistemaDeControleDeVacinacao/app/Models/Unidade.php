@@ -11,10 +11,10 @@ class Unidade extends Model
     use HasFactory;
 
     protected $fillable = ['nome', 'bairro', 'cidade', 'estado'];
-
+    
     public function registros(){
 
-        return $this->hasMany(Registro::Class);
-        
+        return $this->hasMany('App\Models\Registro');
+
     }
 }

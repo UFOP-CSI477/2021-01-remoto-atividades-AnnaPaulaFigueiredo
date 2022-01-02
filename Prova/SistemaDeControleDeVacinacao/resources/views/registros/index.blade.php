@@ -25,9 +25,9 @@
                 @foreach($registros as $reg)
                     <tr>
                         <td>{{$reg->id}}</td>
-                        <td>{{$reg->pessoa->pessoa_id}}</td>
-                        <td>{{$reg->unidade->unidade_id}}</td>
-                        <td>{{$reg->vacina->vacina_id}}</td>
+                        <td>{{$reg->pessoa->nome}}</td>
+                        <td>{{$reg->unidade->nome}}</td>
+                        <td>{{$reg->vacina->fabricante}}</td>
                         <td>{{$reg->dose}}</td>
                         <td>{{$reg->data_registro}}</td>
                     </tr>

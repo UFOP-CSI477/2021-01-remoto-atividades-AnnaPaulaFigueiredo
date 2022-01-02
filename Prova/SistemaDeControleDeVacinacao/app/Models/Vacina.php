@@ -14,7 +14,7 @@ class Vacina extends Model
     
     public function registros(){
 
-        return $this->hasMany(Registro::Class);
-        
+        return $this->hasMany('App\Models\Registro');
+
     }
 }
