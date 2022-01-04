@@ -1,5 +1,5 @@
 # **CSI606-2021-01 - Remoto - Proposta de Trabalho Final**
-## *Aluna(o): Receita na mão*
+## *Aluna(o): Anna Paula Figueiredo*
 
 --------------
 

@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('/', App\Http\Controllers\HomeController::class);
+Route::resource('/home', App\Http\Controllers\HomeController::class);
+Route::resource('/favoritos', App\Http\Controllers\FavoritosController::class);
+Route::resource('/receitas', App\Http\Controllers\ReceitasController::class);

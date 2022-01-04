@@ -1,5 +1,5 @@
 # **CSI606-2021-01 - Remoto - Trabalho Final - Resultados**
-## *Aluna(o): Princesa Leia (Luke Skywalker)*
+## *Aluna(o): Anna Paula Figueiredo*
 
 --------------
 
@@ -7,23 +7,39 @@
 
 ### Resumo
 
-  (Apresentar um breve resumo sobre o seu trabalho, indicando o contexto e as principais funcionalidades.)
+O contexto deste trabalho se aplica em um local onde é possível visualizar algumas receitas. Já pensou em pesquisar os ingredientes que você tem em casa e encontrar a receita perfeita ? Ou está com pouco tempo e precisa de uma receita rapidinha? 
+Pois é , aqui podemos encontrar algumas dessas funcionalidades. Além do mais, participando do grupo de receitas, você poderá inserir suas próprias receitas e contribuir com o site!
 
 ### 1. Funcionalidades implementadas
-<!-- Descrever as funcionalidades que eram previstas e foram implementas. -->
-  
+
+Tela de visualização das receitas do site;
+Tela de visualização das receitas favoritas do usuários;
+Tela de visualização das receitas cadastradas pelo usuário;
+Criação de receitas pelo usuário;
+Atualização de receitas pelo usuário;
+Deletar receitas.
+
 ### 2. Funcionalidades previstas e não implementadas
-<!-- Descrever as funcionalidades que eram previstas e não foram implementas, apresentando uma breve justificativa do porquê elas não foram incluídas -->
+
+Cadastro de usuário;
+Tela de login;
+Deletar receitas dos favoritos;
+Avaliação e comentários em receitas;
+Busca de receitas.
 
 ### 3. Outras funcionalidades implementadas
 <!-- Descrever as funcionalidades implementas além daquelas que foram previstas, caso se aplique.  -->
 
 ### 4. Principais desafios e dificuldades
-<!-- Descrever os principais desafios encontrados no desenvolvimento do trabalho, quais foram as dificuldades e como elas foram superadas e resolvidas. -->
+
+Dificuldades para criação dos favoritos;
+Problemas com o crud.
 
 ### 5. Instruções para instalação e execução
-<!-- Descrever o que deve ser feito para instalar (ou baixar) a aplicação, o que precisa ser configurando (parâmetros, banco de dados e afins) e como executá-la. -->
+
+Abrir o projeto;
+Pelo prompt de comando, acessar o arquivo laravel, dar o comando "php artisan migrate";
+Abrir o servidor utilizando "php artisan serve".
 
 ### 6. Referências
 <!-- Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT. -->
-
